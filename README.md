@@ -9,7 +9,6 @@ From the top:
 
  vpython-3.92
  tuned specifically for ipython use.
- (Setq *vpython-version-string* "3.92") ; update this below when changing.
 
  vpython.el     - is a pair of modes for sending lines from a 
                   script (sender) to a comint-started inferior 
