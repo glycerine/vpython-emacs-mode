@@ -2,10 +2,12 @@ vpython-emacs-mode
 ==================
 
 My vpython.el mode for ipython. Has *the* most essential feature: step-through
-script line-by-line by pressing ctrl-n.  Anything else is just gravy.
+script line-by-line by pressing ctrl-n.  I don't know how anybody gets
+anything done without this feature, and every other 'python mode for emacs'
+seems to be missing it.
 
 
-From the top:
+Documentation from the top of the vpython.el file:
 
  vpython-3.92
  tuned specifically for ipython use.
