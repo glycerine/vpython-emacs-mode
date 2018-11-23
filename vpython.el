@@ -682,7 +682,9 @@ which is just following the next form back."
   (use-local-map vpython-mode-map)
 
   ;; borrow the setup for lisp mode indentation from the other emacs lisp modes.
-  (lisp-mode-variables  t)
+  ;; arg. this seems to do back things to our manually entered indentation.
+  ;; comment it out for now.
+  ;;(lisp-mode-variables  t)
 
   (run-mode-hooks 'jdev-mode-hook))
 
