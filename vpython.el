@@ -56,7 +56,7 @@
 ;; NB: these just give defaults, which the setq settings below will override.
 ;; Putting them here keeps the byte-compiler from complaining.
 
-(defvar *inferior-vpython-program* "ipython"
+(defvar *inferior-vpython-program* "ipython3"
   "Program invoked by `inferior-vpython'.")
 
 (defvar *inferior-vpython-buffer* "*vpython*"
@@ -91,7 +91,7 @@
 ;(setq *inferior-vpython-program* "/home/jaten/uns/bin/ccl64")
 ;(setq *inferior-vpython-program* "/home/jaten/dj/strongref/terp")
 ;(setq *inferior-vpython-program*  "/Users/jaten/pkg/lush/svn-lush-r908/lush2/")
-(setq *inferior-vpython-program*  "ipython")
+(setq *inferior-vpython-program*  "ipython3")
 
 
 ;; the name of the buffer to run the interpreter in
@@ -724,7 +724,7 @@ which is just following the next form back."
 
 (defvar *inferior-vpython-startup-args* nil
   "arguments to be given to the Inferior Vpython process on startup.")
-(setq *inferior-vpython-startup-args* (list "console" "--nosep" "--colors=NoColor"))
+(setq *inferior-vpython-startup-args* (list "--simple-prompt" "--pprint" "-i"))
 
 ;;; Compatibility functions
 (if (not (fboundp 'comint-line-beginning-position))
